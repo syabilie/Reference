@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Rojak Reference</title>
+  
+    <!-- Favicon-->
+    <link rel="icon" type="image/png" sizes="96x96" href="static/assets/favicon/favicon-96x96.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="static/css/styles.css">
+</head>
+<body>
+    <section class="vh-100">
+       
+        <div class="px-4 py-5  px-md-5 vh-100 overflow-auto" style="background-color: #eee">
+          <div class="container py-5">
+            <div class="row gx-lg-5">
+              <div class="col-lg-6 pt-5">
+                <h1 class="my-5 display-4 fw-bold ls-tight">
+                  The best place <br />
+                  <span class="text-primary">for citing document</span>
+                </h1>
+                
+              </div>
+      
+              <div class="col-lg-6 mb-5 mb-lg-0">
+                <div class="card">
+                  <div class="card-body py-5 px-md-5">
+                    <form>
+        
+                      <!-- Email input -->
+                      <div class="form-outline mb-4">
+                        <input onchange="getEmail()" type="email" id="email" class="form-control" />
+                        <label class="form-label" for="form3Example3">Email address</label>
+                      </div>
+      
+                      <!-- Password input -->
+                      <div class="form-outline mb-4">
+                        <input onchange="getPass()" type="password" id="password" class="form-control" />
+                        <label class="form-label" for="form3Example4">Password</label>
+                      </div>
+      
+                      <!-- Checkbox -->
+                      <div class="form-check d-flex justify-content-left mb-4">
+                        <input class="form-check-input me-2" type="checkbox" value="" id="form2Example33" checked />
+                        <label class="form-check-label" for="form2Example33">
+                          Remember Me
+                        </label>
+                      </div>
+      
+                      <!-- Submit button -->
+
+                    <button onclick="login()"  type="button" class="btn btn-primary btn-block mb-4">
+                      <a style="color: white; text-decoration:none;" href="#" id="login">Login</a>
+                    </button>  
+                    
+                    <div class="d-flex align-items-center justify-content-center pb-4">
+                      <p class="mb-0 me-2">Don't have an account?</p>
+                      <a href="regis.html">Join NOW!</a>
+                    </div>
+
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+      </section>
+      
+      <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+      <script src="./js/login.js"></script>
+</body>
+</html>
